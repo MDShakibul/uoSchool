@@ -2,6 +2,108 @@
     font-family: 'Lexend', sans-serif;
 }
 
+/* header section */
+body.offcanvas-active {
+    overflow: hidden;
+  }
+  
+  
+  .navbar {
+    background-color: #242254;
+    padding: 1.3rem .5rem;
+  }
+  
+  .offcanvas-header {
+    display: none;
+  }
+  
+  .screen-overlay {
+    width: 0%;
+    height: 100%;
+    z-index: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(34, 34, 34, 0.6);
+    transition: opacity 0.2s linear, visibility 0.1s, width 1s ease-in;
+  }
+  .screen-overlay.show {
+    transition: opacity 0.5s ease, width 0s;
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+  
+  .small-img{
+    display: none;
+  }
+  
+  .nav-text{
+    font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      margin-right: 2rem;
+  }
+  
+  @media all and (max-width: 992px) {
+    .offcanvas-header {
+      display: block;
+    }
+    .small-img{
+    display: block;
+  }
+  
+  
+  
+  .nav-text{
+    font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      color: black !important;
+  }
+  
+  
+    .mobile-offcanvas {
+      visibility: hidden;
+      transform: translateX(-100%);
+      border-radius: 0;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: 1200;
+      width: 40%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      transition: visibility 0.2s ease-in-out, transform 0.2s ease-in-out;
+      background-color: #fff !important;
+    }
+  
+    html:lang(ar) .mobile-offcanvas {
+      transform: translateX(100%);
+    }
+  
+    .mobile-offcanvas.show {
+      visibility: visible;
+      transform: translateX(0);
+    }
+  
+    .nav-cont {
+      display: block !important;
+      padding-right: auto !important;
+      padding-left: auto !important;
+    }
+    .dropdown-menu {
+      border: none;
+    }
+    .nav-item {
+      border-bottom: 1px solid #eaeaea;
+    }
+  }
+
 /* six points */
 .icon i {
     font-size: 50px;
@@ -9,9 +111,7 @@
     color: #242254;
 }
 
-.container{
-    width: 1100px !important;
-}
+
 
 .title{
     font-size: 22px;
@@ -138,19 +238,6 @@ hr{
 }
 
 
-/* footer section */ 
-.footer-section{
-    width: 100%;
-  background: url("/images/home/indigenous-art.jpg") center/contain;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.05;
-  margin: 0;
-}
-
-.footer-overlay-background{
-    background-color: #181739F0;
-}
 
 #footer-divider{
     width: 10%;
@@ -158,5 +245,30 @@ hr{
 .footer-title{
     font-size: 47px; 
     font-weight: 600;
+} 
+/* / new footer design / */
+.footer-new {
+    position: relative;
+    background-color: #181739F0;
 }
 
+.overlay-image {
+    position: absolute;
+    background: url("images/home/indigenous-art.jpg") center/contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* / just to show you the text is still there! / */
+    opacity: 0.05;
+}
+
+
+
+/* .back-video{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+} */
