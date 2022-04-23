@@ -138,6 +138,25 @@ hr{
 }
 
 
+/* footer section */ 
+.footer-section{
+    width: 100%;
+  background: url("/images/home/indigenous-art.jpg") center/contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.05;
+  margin: 0;
+}
 
+.footer-overlay-background{
+    background-color: #181739F0;
+}
 
+#footer-divider{
+    width: 10%;
+}
+.footer-title{
+    font-size: 47px; 
+    font-weight: 600;
+}
 
