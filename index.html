@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200&family=Playfair+Display:wght@600&family=Poppins:wght@100;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200&family=Playfair+Display:wght@600&family=Poppins:wght@100;700;900&display=swap"
       rel="stylesheet"
     />
     <!-- Link Swiper's CSS -->
@@ -33,7 +33,7 @@
     <title>Home</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <b class="screen-overlay"></b>
       <nav
         class="navbar2 navbar d-lg-none fixed-top navbar-expand-lg navbar-light"
@@ -58,7 +58,7 @@
         </div>
       </nav>
 
-      <!-- d-lg-none -->
+      
 
       <nav
         id="navbar_main"
@@ -76,7 +76,6 @@
                 /></a>
               </div>
               <button class="navbar-toggler btn-close"></button>
-              <!-- <h5 class="py-2 mx-auto text-white d-inline mx-auto">Navbar</h5> -->
             </div>
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
@@ -138,35 +137,30 @@
           <div></div>
         </div>
       </nav>
-    </header>
+    </header> -->
 
     <main>
         <!-- video section -->
+        <section>
 
-        <!-- <div class="footer-new">
-            <div class="d-flex justify-content-center mt-2">
-              <img
-                src="images/home/upschool-14.png"
-                alt=""
-                class="img-fluid"
-                height="auto"
-                width="30%"
-              />
+          <div class=" vert-center-container">
+              <video autoplay muted loop id="myVideo" height="900">
+                  <source src="https://www.w3schools.com/howto/rain.mp4"  type="video/mp4">
+                  Your browser does not support HTML5 video.
+                  </video>
+            <div class="vert-center-text">
+                <img src="images/home/footer-logo.png" class="img-fluid" alt=""/>
+              <h1 class="banner-title"><strong>Empowering Children to Make a Difference</strong></h1>
+              <p class="text-white mt-2 banner-over-text">…. by providing them with the skills, inspiration & support to solve real-world problems that have impact. </p>
             </div>
-            <div class="overlay-video"></div>
-        </div> -->
+          </div>
+  </section>
+  <div class="mojaic"></div>
 
-       <!--  <div class="video-section">
-
-            <video autoplay loop muted plays-inline class="back-video">
-                <source src="images/home/video.mp4" type="video/mp4"> 
-            </video>
-
-            <div class="content">
-                <h1 class="text-center text-dark">test</h1>
-            </div>
-
-        </div> -->
+  <!-- banner bottom image -->
+  <div class="d-flex justify-content-center banner-bottom-img">
+    <img src="images/home/Upschool-Banners-5.jpg" class="img-fluid" width="60%" alt="">
+  </div>
             
             
             
@@ -175,7 +169,7 @@
       <!-- six points -->
       <section class="container">
         <div class="row mb-5">
-          <div class="col-lg-4" style="padding: 1rem 2.5rem">
+          <div class="col-lg-4 col-md-4 col-sm-12 six-points">
             <div class="icon d-flex justify-content-center">
               <i class="fas fa-globe-americas"></i>
             </div>
@@ -187,7 +181,7 @@
               underpins what we teach.
             </div>
           </div>
-          <div class="col-lg-4" style="padding: 1rem 2.5rem">
+          <div class="col-lg-4 col-md-4 col-sm-12 six-points">
             <div class="icon d-flex justify-content-center">
               <i class="fas fa-cart-arrow-down"></i>
             </div>
@@ -199,7 +193,7 @@
               'real' outcomes.
             </div>
           </div>
-          <div class="col-lg-4" style="padding: 1rem 2.5rem">
+          <div class="col-lg-4 col-md-4 col-sm-12 six-points">
             <div class="icon d-flex justify-content-center">
               <i class="fas fa-lightbulb"></i>
             </div>
@@ -214,7 +208,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4" style="padding: 1rem 2.5rem">
+          <div class="col-lg-4 col-md-4 col-sm-12 six-points">
             <div class="icon d-flex justify-content-center">
               <i class="fas fa-parachute-box"></i>
             </div>
@@ -226,7 +220,7 @@
               are the skills for tomorrow.
             </div>
           </div>
-          <div class="col-lg-4" style="padding: 1rem 2.5rem">
+          <div class="col-lg-4 col-md-4 col-sm-12 six-points">
             <div class="icon d-flex justify-content-center">
               <i class="fas fa-layer-group"></i>
             </div>
@@ -238,7 +232,7 @@
               storytelling (and everything in between)
             </div>
           </div>
-          <div class="col-lg-4" style="padding: 1rem 2.5rem">
+          <div class="col-lg-4 col-md-4 col-sm-12 six-points">
             <div class="icon d-flex justify-content-center">
               <i class="fas fa-cubes"></i>
             </div>
@@ -252,6 +246,26 @@
           </div>
         </div>
       </section>
+
+
+      <!-- find you magic video section -->
+
+      <section class="mt-5">
+
+        <div class=" vert-center-container">
+            <video autoplay muted loop id="myVideo" height="800">
+                <source src="https://www.w3schools.com/howto/rain.mp4"  type="video/mp4">
+                Your browser does not support HTML5 video.
+                </video>
+          <div class="vert-center-text" id="magic-video-section">
+              <img src="images/home/Upschool-Kindbox-Launch-Presentation-9.png" height="350" width="350" class="img-fluid" alt=""/>
+            <h1 id="magic-video-title">Upschool - <span>'Find Your Magic'</span></h1>
+            <p class="magic-video-details">Our mission is to build a system of education where all children can participate in meaningful and impactful educational opportunities and learn things that are inspirational and magical to them.</p>
+            <p class="text-center text-white magic-video-details-italic">Upschool exists to help all children across the globe ‘find their magic’.</p>
+          </div>
+        </div>
+</section>
+<div class="mojaic"></div>
 
       <!-- education forever -->
       <section>
@@ -284,7 +298,7 @@
                 <p class="text-white entrepreneurship-title">
                   Entrepreneurship With Purpose.
                 </p>
-                <p class="text-white">
+                <p class="text-white entrepreneurship-details">
                   Within our platform are opportunities for students to learn
                   real entrepreneurship skills that have real impact. We provide
                   the support for students to take their product or idea to
@@ -507,7 +521,7 @@
       <div class="divider"></div>
 
       <!-- footer section -->
-      <div class="footer-new">
+      <div class="footer-new mt-2">
         <div class="d-flex justify-content-center mt-2">
           <img
             src="images/home/upschool-14.png"
@@ -517,10 +531,10 @@
             width="30%"
           />
         </div>
-        <p class="text-center text-white pb-0 footer-title">
+        <p class="text-center text-white pb-0 footer-title" >
           Change Making Communities
         </p>
-        <p class="text-white text-center container">
+        <p class="text-white text-center container footer-details">
           Underpinning everything we do at Upschool is a deep desire to empower
           students to find their voice, refine and develop their message and
           teach them how to collaborate with each other so that they can create
@@ -532,16 +546,15 @@
             src="images/home/indigenous.jpg"
             alt=""
             height="auto"
-            width="15%"
+            width="17%"
           />
         </div>
         <p
-          class="text-center text-white mt-2 mb-2"
-          style="font-size: 12px; font-weight: 500; letter-spacing: 2px"
+          class="text-center text-white mt-2 mb-4 acknowladgement"
         >
           Acknowledgement of Country
         </p>
-        <p class="details text-white container text-center ps-3 pe-3">
+        <p class="details text-white container text-center w-75" style="font-size: 14px; margin-bottom: 3rem;">
           Upschool would like to acknowledge that we live, work, learn and play
           on the lands of the Aboriginal and Torres Strait Islander people’s –
           who are the oldest continuing culture in human history and the
@@ -555,36 +568,33 @@
           world.
         </p>
 
-        <div
-          class="d-flex justify-content-between container align-items-center mt-5 pb-3"
-        >
-          <div>
-            <img src="images/home/footer-logo.png" alt="" height="35" />
-          </div>
-          <div class="d-flex">
-            <p
-              class="text-white me-3 mb-0"
-              style="font-size: 12px; font-weight: 300"
-            >
-              Disclaimer
-            </p>
-            <p
-              class="text-white me-3 mb-0"
-              style="font-size: 12px; font-weight: 300"
-            >
-              Terms and Conditions
-            </p>
-            <p
-              class="text-white me-3 mb-0"
-              style="font-size: 12px; font-weight: 300"
-            >
-              Privacy Policy
-            </p>
+        <div class="container pb-3">
+          <div class="d-flex justify-content-between align-items-center m-0 p-0 footer-bottom">
+            <div class="footer-logo">
+              <img src="images/home/footer-logo.png" alt="" height="35" />
+            </div class="d-flex">
+            <div class="d-flex p-0">
+              <p class="text-white mb-0 pe-3 footer-link">
+                Disclaimer
+              </p>
+              <p class="text-white mb-0 pe-3 footer-link">
+                Terms and Conditions
+              </p>
+              <p class="text-white mb-0 pe-3 footer-link">
+                Privacy Policy
+              </p>
+            </div>
           </div>
         </div>
         <div class="overlay-image"></div>
       </div>
     </main>
+
+        
+
+
+        
+          
 
     <!-- bootsrtap script -->
     <script
@@ -597,7 +607,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
+    <!-- <script>
       var swiper = new Swiper(".mySwiper", {
         cssMode: true,
         loop: true,
@@ -612,6 +622,6 @@
         mousewheel: true,
         keyboard: true,
       });
-    </script>
+    </script> -->
   </body>
 </html>

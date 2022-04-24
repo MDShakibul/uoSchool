@@ -1,5 +1,7 @@
 *{
     font-family: 'Lexend', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 /* header section */
@@ -104,11 +106,38 @@ body.offcanvas-active {
     }
   }
 
+  /* home page banner video section */
+  .banner-title{
+    width: 90%; 
+    margin: 0 auto; 
+    font-weight: 400; 
+    letter-spacing: 2px; 
+    line-height: 6rem; 
+    top: 15%; 
+    margin-top: 1rem;
+  }
+
+  .banner-over-text{
+    font-family: 'Nunito Sans', Sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+  .banner-bottom-img{
+    position: relative; 
+    top: -7rem;
+  }
+
+
 /* six points */
 .icon i {
     font-size: 50px;
     margin-bottom: 20px;
     color: #242254;
+}
+
+.six-points{
+  padding: 1rem 2.5rem
 }
 
 
@@ -121,6 +150,36 @@ body.offcanvas-active {
 .details{
     font-family: 'Nunito Sans', sans-serif;
 }
+
+/* magic video section */
+
+#magic-video-section{
+  top: 8%;
+}
+
+#magic-video-title{
+  font-family: "Lexend", Sans-serif;
+  font-size: 49px;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+#magic-video-title span{
+  color: #fdcf60;
+}
+
+.magic-video-details{
+  text-align: center;
+    color: #FFFFFF;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.8em;
+    letter-spacing: 1.1px;
+    width: 70%;
+    margin: 0 auto;
+}
+
 
 /* educational forever */
 #title{
@@ -141,11 +200,31 @@ body.offcanvas-active {
     font-size: 47px;
     font-weight: 800;
     padding-right: 5rem ;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.entrepreneurship-details{
+  padding-top: 1.5rem;
+  font-family: "Nunito Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8em;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .img-position{
     margin-top: -6rem;
 }
+
+@media screen and (max-width: 992px) {
+  .img-position{
+    margin-top: 1rem;
+}
+}
+
+
 
 /* people saying */
 
@@ -239,17 +318,33 @@ hr{
 
 
 
-#footer-divider{
-    width: 10%;
-}
-.footer-title{
-    font-size: 47px; 
-    font-weight: 600;
-} 
 /* / new footer design / */
 .footer-new {
     position: relative;
     background-color: #181739F0;
+}
+#footer-divider{
+  width: 10%;
+}
+.footer-title{
+  font-size: 47px; 
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.footer-details{
+  font-size: 14px; 
+  width: 65%;
+}
+
+.footer-link{
+  font-size: 12px; 
+  font-weight: 300;
+}
+
+.acknowladgement{
+  font-size: 12px; 
+  font-weight: 500; 
+  letter-spacing: 3px;
 }
 
 .overlay-image {
@@ -265,6 +360,19 @@ hr{
 }
 
 
+@media screen and (max-width: 550px) {
+  .footer-logo{
+    padding-bottom: 1rem;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+  }
+}
+
+
+
+
 
 /* .back-video{
     position: absolute;
@@ -272,3 +380,285 @@ hr{
     width: 100%;
     z-index: -1;
 } */
+
+
+
+/* Projects page */
+.vert-center-text {
+  position: absolute; 
+  top: 40%; 
+  left: 0;
+  text-align: center; 
+  width: 100%; 
+}
+#project-video{
+  top: 25%; 
+}
+
+.vert-center-text h1 { 
+ color: white;
+ font-size: 5rem;
+ line-height: 1;
+ font-family: 'Nunito Sans', sans-serif;
+ font-weight: 900;
+}
+
+.vert-center-container {
+ position:relative;
+ background-image: linear-gradient(180deg, #223554C9 0%, #242254 100%);
+
+}
+
+video{
+   object-fit: fill;
+   width: 100%;
+   opacity: 0.5;
+}
+
+.title-details{
+  margin: 0 auto;
+  letter-spacing: 1px; 
+  line-height: 2rem;
+}
+
+.mojaic{
+  position: relative;
+  width: 100%;
+    height: 6px;
+    background: white;
+    top: -0.37rem;
+}
+
+/* top projects */
+.top-project{
+  color: #242254;
+  font-weight: 900;
+  font-size: 38px;
+}
+
+.button {
+  background-color: #bbb;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  font-family: 'Nunito Sans', sans-serif;;
+}
+.project-card{
+  border: 1px solid #52575d4d;
+  border-radius: .5rem;
+}
+.project-img{
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.project-title{
+  color: #242254;
+  font-size: 20px;
+    line-height: 21px;
+}
+
+.project-details{
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.price-title{
+  color: #b81242;
+  font-size: 18px;
+    font-weight: 500;
+}
+
+.price-divider{
+  width: 50px;
+    height: 2px;
+    background: #b81242;
+}
+
+.price{
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.information-section{
+  margin-top: 6rem;
+}
+
+.information-title{
+  color: #242254;
+  font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.information-divider{
+  width: 80px;
+    height: 2px;
+    background: #242254;
+}
+
+.girl-pencil-img img, .girl-pencil-details{
+  padding: 0 35px;
+  text-align: justify;
+}
+
+.girl-pencil-details{
+  font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8em;
+}
+
+.girl-computer-img img{
+  padding: 35px;
+}
+
+/* Millions of children across */
+.millionsOfChild-section{
+  position: relative;
+  background-color: #181739F0;
+}
+
+
+
+.millionsOfChild-overlay-image {
+  position: absolute;
+  background: url("images/project/projects-hero.jpg") center/contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* / just to show you the text is still there! / */
+  opacity: 0.30;
+}
+
+.millionsOfChild-section{
+  margin-top: 7rem;
+}
+.millionsOfChild-section h1{
+  color: white;
+  padding: 3rem 4rem 1.8rem 4rem;
+ font-size: 3.7rem;
+ line-height: 1;
+ font-weight: 700;
+ letter-spacing: 0px;
+}
+
+.millionsOfChild-section p{
+  font-size: 26px;
+  line-height: 1;
+}
+
+.millionsOfChild-section-divider{
+  width: 60px;
+  height: 3px;
+  background: rgba(255,255,255,0.35);
+  margin: 0 auto;
+}
+
+
+#given-kids-img{
+  padding-top: 2rem;
+}
+
+
+.gavin-building-img img{
+  height: 100%;
+}
+
+
+
+/* exprience */
+#experience-overlay-image{
+  background: url("images/project/boys-playing.jpg") center/contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* Course page */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.top-bg {
+  background: linear-gradient(#292254, #B71242);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* .top-img img{
+  display: flex;
+  align-items: center;
+} */
+
+.button {
+background-color: #bbb;
+display: block;
+margin: 10px 0;
+padding: 10px;
+width: 100%;
+border: none;
+}
+
+.card{
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.course-title{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.course-details{
+  font-size: 16px;
+  font-weight: 300;
+
+}
+
+.top-title{
+  color: #fdcf60;
+}
+
+.banner-text{
+  padding-left: 6rem;
+}
+.top-details{
+  font-size: 13px; 
+  font-weight: 300;
+}
+
+.top-italic{
+  font-style: italic; 
+  font-size: 13px; 
+  font-weight: 700;
+}
+
+.magic-video-details-italic{
+  font-style: italic;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 22px;
+  line-height: 1.8em;
+  letter-spacing: 1.1px;
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-text{
+    padding-left: 0rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .banner-img img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
