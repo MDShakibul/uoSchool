@@ -148,7 +148,7 @@
                   <source src="https://www.w3schools.com/howto/rain.mp4"  type="video/mp4">
                   Your browser does not support HTML5 video.
                   </video>
-            <div class="vert-center-text">
+            <div class="vert-center-text" id="responsive-banner-title">
                 <img src="images/home/footer-logo.png" class="img-fluid" alt=""/>
               <h1 class="banner-title"><strong>Empowering Children to Make a Difference</strong></h1>
               <p class="text-white mt-2 banner-over-text">…. by providing them with the skills, inspiration & support to solve real-world problems that have impact. </p>
@@ -265,7 +265,7 @@
           </div>
         </div>
 </section>
-<div class="mojaic"></div>
+<div class="mojaic"></div> 
 
       <!-- education forever -->
       <section>
@@ -522,7 +522,7 @@
 
       <!-- footer section -->
       <div class="footer-new mt-2">
-        <div class="d-flex justify-content-center mt-2">
+        <div class="d-flex justify-content-center mt-2 footer-top-img">
           <img
             src="images/home/upschool-14.png"
             alt=""
@@ -531,17 +531,17 @@
             width="30%"
           />
         </div>
-        <p class="text-center text-white pb-0 footer-title" >
+        <p class="text-center text-white pb-0 footer-title" id="footer-section-title">
           Change Making Communities
         </p>
-        <p class="text-white text-center container footer-details">
+        <p class="text-white text-center container footer-details" id="footer-section-details">
           Underpinning everything we do at Upschool is a deep desire to empower
           students to find their voice, refine and develop their message and
           teach them how to collaborate with each other so that they can create
           the change they want to see in the world.
         </p>
         <div id="footer-divider" class="divider mt-4"></div>
-        <div class="d-flex justify-content-center mt-4">
+        <div class="d-flex justify-content-center mt-4" id="footer-middle-img">
           <img
             src="images/home/indigenous.jpg"
             alt=""
@@ -554,7 +554,7 @@
         >
           Acknowledgement of Country
         </p>
-        <p class="details text-white container text-center w-75" style="font-size: 14px; margin-bottom: 3rem;">
+        <p class="details text-white container text-center footer-bottom-details" id="footer-bottom">
           Upschool would like to acknowledge that we live, work, learn and play
           on the lands of the Aboriginal and Torres Strait Islander people’s –
           who are the oldest continuing culture in human history and the
@@ -580,7 +580,7 @@
               <p class="text-white mb-0 pe-3 footer-link">
                 Terms and Conditions
               </p>
-              <p class="text-white mb-0 pe-3 footer-link">
+              <p class="text-white mb-0 footer-link">
                 Privacy Policy
               </p>
             </div>
@@ -612,6 +612,9 @@
         cssMode: true,
         loop: true,
         slideToClickedSlide: true,
+        autoplay: {
+          delay: 5000,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

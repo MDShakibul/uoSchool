@@ -5,7 +5,7 @@
 }
 
 /* header section */
-body.offcanvas-active {
+/* body.offcanvas-active {
     overflow: hidden;
   }
   
@@ -104,7 +104,7 @@ body.offcanvas-active {
     .nav-item {
       border-bottom: 1px solid #eaeaea;
     }
-  }
+  } */
 
   /* home page banner video section */
   .banner-title{
@@ -218,13 +218,6 @@ body.offcanvas-active {
     margin-top: -6rem;
 }
 
-@media screen and (max-width: 992px) {
-  .img-position{
-    margin-top: 1rem;
-}
-}
-
-
 
 /* people saying */
 
@@ -304,10 +297,6 @@ body.offcanvas-active {
     background-color: #000 !important;
 }
 
-hr{
-    width: 98%;
-    margin: 5px 0;
-}
 
 .divider{
     width: 98%;
@@ -347,6 +336,12 @@ hr{
   letter-spacing: 3px;
 }
 
+.footer-bottom-details{
+  font-size: 14px; 
+  margin-bottom: 3rem; 
+  width: 75%;
+}
+
 .overlay-image {
     position: absolute;
     background: url("images/home/indigenous-art.jpg") center/contain;
@@ -359,6 +354,74 @@ hr{
     opacity: 0.05;
 }
 
+@media screen and (max-width: 992px) {
+  .img-position{
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #responsive-banner-title h1 , #magic-video-section h1{
+    font-size: 2.5rem;
+  }
+
+ 
+
+  .magic-video-details{
+    font-size: 16px;
+    line-height: 1.3em;
+    width: 95%;
+  }
+
+  .magic-video-details-italic{
+    font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  width: 95%;
+  }
+  .education-forever-title{
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .entrepreneurship-title{
+    font-size: 30px;
+    font-weight: 500;
+    padding-right: 2rem ;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .entrepreneurship-details{
+    width: 100%;
+  }
+  .saying-title{
+    font-size: 32px !important;
+    font-weight: 700;
+  }
+
+  .footer-top-img img{
+    width: 243px;
+    height: 230px;
+  }
+  #footer-section-title{
+    font-size: 32px; 
+  }
+  #footer-section-details{
+    font-size: 14px; 
+    width: 98%;
+  }
+
+  #footer-middle-img img{
+    width: 138px;
+    height: 43px;
+  }
+
+  #footer-bottom{
+    font-size: 12px; 
+    margin-bottom: 3rem; 
+    width: 98%;
+  }
+}
 
 @media screen and (max-width: 550px) {
   .footer-logo{
@@ -373,17 +436,7 @@ hr{
 
 
 
-
-/* .back-video{
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
-} */
-
-
-
-/* Projects page */
+/*----------------------- Projects page -------------------*/
 .vert-center-text {
   position: absolute; 
   top: 40%; 
@@ -419,6 +472,7 @@ video{
   margin: 0 auto;
   letter-spacing: 1px; 
   line-height: 2rem;
+  width: 60%;
 }
 
 .mojaic{
@@ -578,6 +632,53 @@ video{
 }
 
 
+@media screen and (max-width: 576px) {
+  #project-video h1{
+    font-size: 25px;
+  }
+
+  .title-details{
+    width: 90%;
+  }
+  .top-project{
+    font-size: 25px;
+    text-align: center;
+  }
+
+ .information-title{
+   font-size: 30px;
+ }
+ #information-title{
+  padding: 0 35px;
+ }
+ #millionsOfChild-title{
+   font-size: 30px;
+ }
+ #millionsOfChild-details{
+   font-size: 20px;
+   width: 90%;
+ }
+ .gavin-building-img{
+   padding: 0 35px;
+   height: 100% !important;
+ }
+
+ .millionsOfChild-section h1{
+  color: white;
+ font-size: 1.7rem;
+ line-height: 1;
+ font-weight: 500;
+ letter-spacing: 0px;
+}
+.millionsOfChild-section p{
+ font-size: 20px;
+}
+.millionsOfChild{
+  margin-top: 3rem;
+}
+}
+
+
 
 /* Course page */
 
@@ -660,5 +761,9 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+@media screen and (max-width: 576px) {
+  
 }
 
