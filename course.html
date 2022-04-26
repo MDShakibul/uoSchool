@@ -12,12 +12,10 @@
       crossorigin="anonymous"
     />
     <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;400;600;800;900&family=Playfair+Display:wght@600&family=Poppins:wght@100;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;400;600;800;900&family=Playfair+Display:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100&display=swap" rel="stylesheet">
+    
     <!-- font icon -->
     <script
       src="https://kit.fontawesome.com/2f1f0451bd.js"
@@ -28,8 +26,153 @@
     <title>Course</title>
   </head>
   <body>
+    <!-- navbar -->
+    <div class="header row sticky-top">
+      
+      <div class="col-9">
+        <nav
+          class="navbar-mobile navbar d-lg-none fixed-top navbar-expand-lg navbar-light"
+        >
+          <div class="container">
+            <div class="header-left">
+              <div class="logo-mobile">
+                <a href="#"><img src="images/home/logo.png" alt="" height="35" /></a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="me-3">
+                <li class="nav-item dropdown" style="list-style-type: none;">
+                  <a
+                    class="nav-link dropdown-toggle text-white nav-text"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    ><i class="fas fa-user-circle" style="font-size: 1.5rem"></i>
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item nav-text" href="#">Sign In</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item nav-text" href="#">Register</a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+
+              <button data-trigger="#navbar_main" class="btn" type="button">
+                <i class="fas fa-bars" style="font-size: 1.5rem"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- d-lg-none -->
+
+        <nav
+          id="navbar_main"
+          class="mobile-offcanvas navbar navbar-expand-lg navbar-light p-0"
+          
+        >
+          <div class="d-flex" style="width: 100%">
+            <div class="nav-cont d-lg-flex" style="width: 100%">
+              <a class="navbar-text d-none d-lg-block" id="navbar-logo" href="#">
+                <img src="images/home/logo.png" class="py-2" height="50" />
+              </a>
+              <div
+                class="d-flex align-items-center justify-content-between"
+                style="background-color: #f1f2f6"
+              >
+                <div class="small-img p-4">
+                  <a class="navbar-brand" href="#">
+                    <img src="images/home/logo.png" alt="" height="30" />
+                  </a>
+                </div>
+                <button class="navbar-toggler btn-close pe-5"></button>
+                <!-- <h5 class="py-2 mx-auto text-white d-inline mx-auto">Navbar</h5> -->
+              </div>
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white nav-text"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >Enrol
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item nav-text" href="http://127.0.0.1:5500/build_a_library.html"
+                        >Build a Library</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item nav-text" href="#"
+                        >Write a Book</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white nav-text"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >Projects
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item nav-text" href="/projects.html">Projects</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item nav-text" href="#">
+                        New Library Application
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white nav-text" href="/course.html">Course </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white nav-text" href="#">Hubs </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white nav-text" href="#">Our Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white nav-text" href="#"
+                    >Testimonials</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-3">
+        <div class="d-flex align-items-center justify-content-end me-5">
+          <a href="#" class="control-search"><i class="fas fa-search"></i></a>
+          <hr class="hr-1" />
+          <div class="login-register text-white">
+            <span class="box-icon"
+              ><i class="icon fas fa-user" aria-hidden="true"></i
+            ></span>
+            <a href="#" class="login-link"
+              ><span class="sign-in-text">Sign in</span></a
+            >
+            /
+            <a href="#" class="register-link"
+              ><span class="register-text">Register</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
     <main>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up" style="font-size: 30px"></i></button>
       <!-- top section -->
       <section class="top-bg">
         <div class="row m-0">
@@ -163,5 +306,54 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        /* click to top */
+            var mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      
+      
+      /* navbar toggle */
+      
+      $(document).ready(function () {
+          // jQuery code
+      
+          $('[data-trigger]').on('click', function (e) {
+            e.preventDefault()
+            e.stopPropagation()
+            var offcanvas_id = $(this).attr('data-trigger')
+            $(offcanvas_id).toggleClass('show')
+            $('body').toggleClass('offcanvas-active')
+            $('.screen-overlay').toggleClass('show')
+          })
+      
+          // Close menu when pressing ESC
+          $(document).on('keydown', function (event) {
+            if (event.keyCode === 27) {
+              $('.mobile-offcanvas').removeClass('show')
+              $('body').removeClass('overlay-active')
+            }
+          })
+      
+          $('.btn-close, .screen-overlay').click(function (e) {
+            $('.screen-overlay').removeClass('show')
+            $('.mobile-offcanvas').removeClass('show')
+            $('body').removeClass('offcanvas-active')
+          })
+        }) 
+          </script>
   </body>
 </html>
