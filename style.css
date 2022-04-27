@@ -21,7 +21,7 @@ body.offcanvas-active {
 
 .header {
   background-color: #242254;
-  padding: 20px 0;
+  padding: 10px 0;
   margin: 0;
 }
 
@@ -51,7 +51,7 @@ body.offcanvas-active {
 
 .dropdown-menu {
   padding: 0;
-  box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.2);
+ /*  box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.2); */
 }
 
 .dropdown:hover .dropdown-menu {
@@ -149,6 +149,7 @@ hr.hr-1 {
 @media all and (max-width: 992px) {
   .header {
     background-color: #fff;
+    padding: 0px;
   }
 
   .offcanvas-header {
@@ -157,6 +158,10 @@ hr.hr-1 {
   .small-img {
     display: block;
   }
+
+  .dropdown-toggle.content-none::after {
+    content: none;
+}
 
   .nav-text {
     padding: 12px 0 12px;
@@ -867,7 +872,55 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 /* Build a library */
 
-banner section
+/* banner section */
+.banner-section{
+  background-color: #242254;
+}
+.yelloe-text-color{
+  color: #fdcf60;;
+}
+.free-program{
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.2;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.build-library{
+  font-size: 57px;
+  font-weight: 800;
+  line-height: 1.3em;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.banner-details{
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.underline-text{
+  font-family: "Nunito Sans", Sans-serif;
+    font-weight: 300;
+}
+
+.box-img{
+  position: relative;
+}
+
+.box-img div{
+  height: 150px; 
+  width: 150px; 
+  background-color: #b81242; 
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
 
 /* counter section */
 .count-number{
@@ -890,6 +943,7 @@ banner section
 
 /* body title section */
 .heading-title{
+  font-family: 'Kumbh Sans', sans-serif;
   color: #242254;
   font-size: 75px;
   font-weight: bold;
@@ -1202,6 +1256,169 @@ banner section
 
     /* experienced school builders */
 
+    /* some common question */
+
+    .ask-question{
+      font-size: 38px;
+      font-weight: bold;
+      font-style: normal;
+      text-decoration: none;
+      line-height: 50px;
+      letter-spacing: -2px;
+      color: #242254;
+    }
+
+    .question-description{
+      color: #242254;
+      font-family: "Nunito Sans", Sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      font-style: normal;
+      line-height: 25px;
+      letter-spacing: 0px;
+    }
+
+    .accordion-body.build-a-library{
+      border-width: 1px;
+      font-family: "Nunito Sans", Sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: none;
+      font-style: normal;
+      text-decoration: none;
+      line-height: 1.2em;
+      letter-spacing: 0.1px;
+      padding: 0% 25% 5% 2%;
+      color: #000;
+    }
+    /* padding */
+    .px-10 {
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+
+    .px-20 {
+      padding-left: 20rem;
+      padding-right: 20rem;
+    }
+
+    .grid-container {
+      display: grid;
+      column-gap: 2rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .icon-box-wrapper {
+      text-align: left;
+      display: block;
+    }
+
+    .icon-box-icon {
+      margin: 40px 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .icon-style {
+      display: inline-block;
+      line-height: 1;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      text-align: center;
+      fill: #ffffff;
+      color: #ffffff;
+      font-size: 43px;
+      padding: 13px;
+      border-radius: 0px 0px 0px 0px;
+    }
+
+    .icon-style i {
+      width: 1em;
+      height: 1em;
+      position: relative;
+      display: block;
+    }
+
+    .icon-box-content {
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+    }
+
+    .icon-box-title {
+      margin: 0;
+      margin-bottom: 20px;
+      color: #242254;
+      font-size: 25px;
+      font-weight: bold;
+      text-transform: capitalize;
+      font-style: normal;
+      text-decoration: none;
+      line-height: 1.2em;
+      letter-spacing: -0.7px;
+    }
+
+    .icon-box-description {
+      min-height: 0 !important;
+      margin: 0;
+      color: #242254;
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: none;
+      font-style: normal;
+      text-decoration: none;
+      line-height: 22px;
+      letter-spacing: -0.6px;
+    }
+
+    .widget-wrap {
+      background-image: url(https://v9p02y041n1.c.updraftclone.com/wp-content/uploads/2022/04/7736bf08-c9f4-413d-bd1f-2999c0264109.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .questions-image {
+      width: 80%;
+      margin-top: 5rem;
+    }
+
+    form label {
+      padding: 0.5rem 0;
+    }
+
+    /* accordion */
+    .accordion-button {
+      color: #242254;
+      padding: 2rem 0;
+      font-family: 'Nunito Sans', Sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      line-height: 1.1em;
+      letter-spacing: 0px;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: #242254;
+      background-color: #fff;
+      box-shadow: none;
+    }
+
+    .accordion-body {
+      border-width: 1px;
+      color: #b81242;
+      font-family: 'Nunito Sans', Sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: none;
+      font-style: normal;
+      text-decoration: none;
+      line-height: 1.2em;
+      letter-spacing: 0.1px;
+      padding: 0% 25% 5% 2%;
+    }
+
    
     /* Apply section */
     .apply-img{
@@ -1279,6 +1496,15 @@ banner section
     /* Build a library responsive */
 
     @media screen and (max-width: 576px) {
+
+      .box-img div{
+        height: 50px; 
+        width: 50px;
+      }
+      .first-count{
+        padding-top: 3rem;
+      }
+
       #video-info video{
         width: 100%;
         opacity: 1;
@@ -1361,4 +1587,41 @@ banner section
       font-weight: 400;
     }
 
+    }
+
+
+
+    /* Write a books */
+
+    /* banner section */
+    #book-banner-details, #book-banner-text{
+      padding-right: 8rem;
+    }
+
+    .timer{
+      font-size: 54px;
+      color: #fec503;
+      line-height: 1;
+      margin-bottom: 2px;
+      padding-top: 1rem;
+    }
+
+    #informatic-video{
+      width: 100%;
+    }
+    .video-top-text{
+      font-family: 'Kumbh Sans', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #242254;
+    }
+
+    .download-document{
+      font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #242254;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    color: #FFFFFF;
     }
