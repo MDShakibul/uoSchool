@@ -155,6 +155,11 @@ hr.hr-1 {
   .offcanvas-header {
     display: block;
   }
+
+  .dropdown-menu.show{
+    display: block;
+    margin: 0px -100px;
+  }
   .small-img {
     display: block;
   }
