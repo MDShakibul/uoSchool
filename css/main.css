@@ -195,7 +195,7 @@ hr.hr-1 {
         left: 0;
         height: 100%;
         z-index: 1200;
-        width: 60%;
+        width: 65%;
         overflow-y: scroll;
         overflow-x: hidden;
         transition: visibility 0.2s ease-in-out, transform 0.2s ease-in-out;
@@ -989,6 +989,148 @@ video {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+/* Dear World */
+.top-banner-left-side{
+    font-family: 'Gaegu', cursive;
+    margin-top: 1rem;
+    font-size: 23px;
+    color: #242254;
+}
+#italic{
+    font-style: italic;
+}
+
+.top-banner-right-side{
+    padding: 3rem;
+}
+button{
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #181739;
+}
+
+/* Goals section */
+.goal-focus{
+    font-family: "Lexend", Sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #242254;
+    font-style: italic;
+    padding-top: 5rem;
+}
+
+/* .iframe-container{
+    position: relative;
+    width: 90%;
+    height: auto;
+} */
+
+.iframe-container iframe{
+    width: 90%;
+    height: 650px;
+}
+
+.goal-video-details{
+    color: #242254;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8em;
+    width: 90%;
+    margin: 1rem auto 3rem auto;
+    text-align: center;
+}
+
+.goal-type-title{
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    color: #242254;
+    margin-top: 1rem;
+    
+}
+
+.goal-type-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.goal-type-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* FAQ's section */
+.faqs-container {
+    padding: 2rem 6rem;
+    background-color: #f8f8f8;
+  }
+
+  #faqs .accordion-button {
+    padding: 1rem 0;
+    background-color: #f8f8f8;
+  }
+
+  #faqs .accordion-button:not(.collapsed) {
+    background-color: #f8f8f8;
+  }
+
+  #faqs .accordion-body {
+    padding-left: 0;
+    background-color: #f8f8f8;
+    font-family: 'Kumbh Sans', Sans-serif;
+    color: inherit;
+    line-height: 1.8em;
+  }
+
+/* dear world message container */
+.dear-world-message-container {
+    margin-top: 8rem;
+    padding: 0 17rem;
+  }
+
+  .dear-world-message-form {
+    padding: 3rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+@media all and (max-width: 992px) {
+    /* dear world message container */
+    .dear-world-message-container {
+      padding: 0;
+    }
+
+    .dear-world-message-form {
+      padding: 1rem;
+    }
+    .iframe-container iframe{
+        width: 90%;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .iframe-container iframe{
+        width: 80%;
+        height: 350px;
+    }
+
+    .sm-ful{
+        width: 100% !important;
+    }
+
+    .goal-bottom-btn{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
     }
 }
 
@@ -1874,7 +2016,7 @@ form label {
     text-transform: none;
 }
 
-.btn-register {
+.btn-register, .btn-submit {
     padding: 0.8rem 2rem;
     font-size: 14px;
     background: #242254;
